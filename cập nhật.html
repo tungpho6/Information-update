@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>Cập nhật thông tin sinh viên</title>
+        <link rel="stylesheet" href="styles-ql.css">
+       </head>
+<body>
+       <!--this is the header section-->  
+       <div class="header-container">
+           <div class="image-section">
+           <a class="link" href=""><img class="logo-UTC" src="Images/download.png" alt="">
+           </a>
+           </div>
+           <div class="middle-section">
+           <div class="contact-language">
+             &#10088;&#43;&#10089;&#10072; contact:123-456-7890 
+             <img class="Languages" src="Images/England.png" alt="">
+             <img class="Languages" src="Images/Flag_of_North_Vietnam_(1955–1976).svg.webp" alt="">
+           </div>
+           <div class="seacrh-bar-container">
+           <input class="search-bar" type="text" placeholder="Tìm kiếm">
+           <button class="Search-button">
+           <img class="Search-icon" src="Images/search.svg" alt="">
+           </button>
+           </div>
+           </div>
+           <div class="final-section">
+           <button class="Login">
+           <a style="text-decoration:none;" href="https://tungpho6.github.io/Project-front-end/Loginpage.html?fbclid=IwAR2Qv7NTcdB8lSJ9h7juJOdQPA8og9wgWFgG6lxMfZaO0vKcxk33jndMnEY">Login</a>
+           </button>
+           <button class="Sign-in">
+           Đăng ký học
+           </button>
+           </div>
+       </div>
+           <!--end of the header!-->   
+              <!--this is the sidebar-->
+       <div class="Side-bar-container">
+           <button class="Task-button">
+           <a style="color:lightpink; text-decoration: none;" href="https://tungpho6.github.io/Home-page/Home.html">Home</a>
+           </button>
+           <button class="Task-button">
+           <a style="color:lightpink; text-decoration: none;" href="https://tuyensinh.utc.edu.vn/">Tuyển sinh đại học</a>  
+           </button>
+           <button class="Task-button">
+             <a style="color:lightpink; ;text-decoration: none;"href="https://www.utc.edu.vn/sau-dai-hoc">Tuyển sinh sau đại học</a>
+           </button>
+           <button class="Task-button">
+             <a style="color:lightpink; ;text-decoration: none;" href="https://www.utc.edu.vn/tin-tuc">Tin tức- Sự kiện</a>
+           </button>
+           <button class="Task-button">
+             <a style="color:lightpink; ;text-decoration: none;" href="">Hỏi đáp</a>
+           </button>
+           <button class="Task-button">
+             <a style="color:lightpink; text-decoration: none;" href="">Liên hệ</a>
+           </button>
+           <button class="Task-button">
+             <a style="color:lightpink; ;text-decoration: none;" href="https://tungpho6.github.io/tra-cuu/tracuudiem.html">Tra cứu điểm</a>
+           </button>
+           <button class="Task-button">
+             <a style="color:lightpink; ;text-decoration: none;" href="">About us</a>
+           </button>
+       </div>
+           <!--End of the side bar-->   
+
+	            
+<section>
+                <div class="row">
+                    <form id="formupdate" method="post">
+                                
+                                    <div class="panel-heading">
+										<h1>THÔNG TIN CƠ BẢN</h1>
+                                    </div>
+                                                <label><br></label>
+                                                <input  type="text" class="form-control" id="hoten" name="hoten" placeholder="Họ và tên"
+                                                 VALUE=""/>
+                                                <label class="right"> </label>
+												<label class="left"> </label>
+                                                <input type="text" class="form-control" id="ngay-sinh" name="ngay-sinh" placeholder="Ngày sinh" 
+                                                       VALUE=""/>
+						   					  <label>
+                                                <div class="checkbox">
+                                                    Giới tính:&nbsp; Nam
+                                                        <input type="radio" name="sex" value="male"
+                                                                >   Nữ 
+                                                      
+                                                        <input type="radio" name="sex" value="male"
+                                                                > <br>
+                                                    </div>   
+                                                  </label>
+                                                <input type="text" class="form-control" id="msv" name="msv" placeholder="Mã sinh viên" VALUE=""/>
+                                                <input type="text" class="form-control" id="khoa" name="khoa" placeholder="Khóa " VALUE=""/>
+                                                <input type="text" class="form-control" id="dantoc" placeholder="Dân tộc" 
+                                                       name="dantoc" VALUE=""/>
+                                                <input type="text" class="form-control" id="tongiao" placeholder="Tôn giáo"
+                                                       name="tongiao" VALUE=""/>
+                                           
+                                   
+                                                <label class="right"> </label>
+                                                <input type="text" class="form-control" id="ngaysinh" placeholder="Quốc tịch"
+                                                        name="quoctich"
+                                                       VALUE=""/>
+                                                <input type="text" class="form-control" id="cmnd" name="cmnd" placeholder="Số CMND/Thẻ căn
+                                                    cước"
+                                                       VALUE=""/>
+                                                    <input type="text" class="form-control" name="ngaycapcmnd" placeholder="Ngày cấp CMND/Thẻ căn cước"
+                                                           id="ngaycapcmnd"
+                                                           value=""/>
+                                                <label><br>Nơi cấp CMND/Thẻ căn cước</label>
+                                                <select id="noicapcmnd" name="noicapcmnd" class="form-control">
+												  <option value=""></option>
+                                                    <option value="CỤC CẢNH SÁT ĐKQL CƯ TRÚ VÀ DLQG VỀ CƯ DÂN" >CỤC CẢNH SÁT ĐKQL CƯ TRÚ VÀ DLQG VỀ CƯ DÂN</option><option value="Hà Nội" >Hà Nội</option><option value="Hồ Chí Minh" >Hồ Chí Minh</option><option value="Hải Phòng" >Hải Phòng</option><option value="Đà Nẵng" >Đà Nẵng</option><option value="Hà Giang" >Hà Giang</option><option value="Cao Bằng" >Cao Bằng</option><option value="Lai Châu" >Lai Châu</option><option value="Lào Cai" >Lào Cai</option><option value="Tuyên Quang" >Tuyên Quang</option><option value="Lạng Sơn" >Lạng Sơn</option><option value="Bắc Kạn" >Bắc Kạn</option><option value="Thái Nguyên" >Thái Nguyên</option><option value="Yên Bái" >Yên Bái</option><option value="Sơn La" >Sơn La</option><option value="Phú Thọ">Phú Thọ</option><option value="Vĩnh Phúc" >Vĩnh Phúc</option><option value="Quảng Ninh" >Quảng Ninh</option><option value="Bắc Giang" >Bắc Giang</option><option value="Bắc Ninh" >Bắc Ninh</option><option value="Hải Dương" >Hải Dương</option><option value="Hưng Yên" >Hưng Yên</option><option value="Hòa Bình" >Hòa Bình</option><option value="Hà Nam" >Hà Nam</option><option value="Nam Định" >Nam Định</option><option value="Thái Bình" >Thái Bình</option><option value="Ninh Bình" >Ninh Bình</option><option value="Thanh Hóa" >Thanh Hóa</option><option value="Nghệ An" >Nghệ An</option><option value="Hà Tĩnh" >Hà Tĩnh</option><option value="Quảng Bình" >Quảng Bình</option><option value="Quảng Trị" >Quảng Trị</option><option value="Huế" >Huế</option><option value="Quảng Nam" >Quảng Nam</option><option value="Quảng Ngãi" >Quảng Ngãi</option><option value="Kon Tum" >Kon Tum</option><option value="Bình Định" >Bình Định</option><option value="Gia Lai" >Gia Lai</option><option value="Phú Yên" >Phú Yên</option><option value="Đăk Lăk" >Đăk Lăk</option><option value="Khánh Hòa" >Khánh Hòa</option><option value="Lâm Đồng" >Lâm Đồng</option><option value="Bình Phước" >Bình Phước</option><option value="Bình Dương" >Bình Dương</option><option value="Ninh Thuận" >Ninh Thuận</option><option value="Tây Ninh" >Tây Ninh</option><option value="Bình Thuận" >Bình Thuận</option><option value="Đồng Nai" >Đồng Nai</option><option value="Long An" >Long An</option><option value="Đồng Tháp" >Đồng Tháp</option><option value="An Giang" >An Giang</option><option value="Bà Rịa-Vũng Tàu" >Bà Rịa-Vũng Tàu</option><option value="Tiền Giang" >Tiền Giang</option><option value="Kiên Giang" >Kiên Giang</option><option value="Cần Thơ" >Cần Thơ</option><option value="Bến Tre" >Bến Tre</option><option value="Vĩnh Long" >Vĩnh Long</option><option value="Trà Vinh" >Trà Vinh</option><option value="Sóc Trăng" >Sóc Trăng</option><option value="Bạc Liêu" >Bạc Liêu</option><option value="Cà Mau" >Cà Mau</option><option value="Điện Biên" >Điện Biên</option><option value="Đăk Nông" >Đăk Nông</option><option value="Hậu Giang" >Hậu Giang</option></select>
+                                                
+                                      
+                                                <label class="right">Nơi sinh (Chọn
+                                                    tỉnh/TP đúng theo giấy khai sinh)</label>
+                                                <select id="noisinh" name="noisinh" 
+                                                        class="form-control">
+													<option value=""></option>
+                                                    <option value="Hà Nội" >Hà Nội</option><option value="Hồ Chí Minh" >Hồ Chí Minh</option><option value="Hải Phòng" >Hải Phòng</option><option value="Đà Nẵng" >Đà Nẵng</option><option value="Hà Giang" >Hà Giang</option><option value="Cao Bằng" >Cao Bằng</option><option value="Lai Châu" >Lai Châu</option><option value="Lào Cai" >Lào Cai</option><option value="Tuyên Quang" >Tuyên Quang</option><option value="Lạng Sơn" >Lạng Sơn</option><option value="Bắc Kạn" >Bắc Kạn</option><option value="Thái Nguyên" >Thái Nguyên</option><option value="Yên Bái" >Yên Bái</option><option value="Sơn La" >Sơn La</option><option value="Phú Thọ">Phú Thọ</option><option value="Vĩnh Phúc" >Vĩnh Phúc</option><option value="Quảng Ninh" >Quảng Ninh</option><option value="Bắc Giang" >Bắc Giang</option><option value="Bắc Ninh" >Bắc Ninh</option><option value="Hải Dương" >Hải Dương</option><option value="Hưng Yên" >Hưng Yên</option><option value="Hòa Bình" >Hòa Bình</option><option value="Hà Nam" >Hà Nam</option><option value="Nam Định" >Nam Định</option><option value="Thái Bình" >Thái Bình</option><option value="Ninh Bình" >Ninh Bình</option><option value="Thanh Hóa" >Thanh Hóa</option><option value="Nghệ An" >Nghệ An</option><option value="Hà Tĩnh" >Hà Tĩnh</option><option value="Quảng Bình" >Quảng Bình</option><option value="Quảng Trị" >Quảng Trị</option><option value="Huế" >Huế</option><option value="Quảng Nam" >Quảng Nam</option><option value="Quảng Ngãi" >Quảng Ngãi</option><option value="Kon Tum" >Kon Tum</option><option value="Bình Định" >Bình Định</option><option value="Gia Lai" >Gia Lai</option><option value="Phú Yên" >Phú Yên</option><option value="Đăk Lăk" >Đăk Lăk</option><option value="Khánh Hòa" >Khánh Hòa</option><option value="Lâm Đồng" >Lâm Đồng</option><option value="Bình Phước" >Bình Phước</option><option value="Bình Dương" >Bình Dương</option><option value="Ninh Thuận" >Ninh Thuận</option><option value="Tây Ninh" >Tây Ninh</option><option value="Bình Thuận" >Bình Thuận</option><option value="Đồng Nai" >Đồng Nai</option><option value="Long An" >Long An</option><option value="Đồng Tháp" >Đồng Tháp</option><option value="An Giang" >An Giang</option><option value="Bà Rịa-Vũng Tàu" >Bà Rịa-Vũng Tàu</option><option value="Tiền Giang" >Tiền Giang</option><option value="Kiên Giang" >Kiên Giang</option><option value="Cần Thơ" >Cần Thơ</option><option value="Bến Tre" >Bến Tre</option><option value="Vĩnh Long" >Vĩnh Long</option><option value="Trà Vinh" >Trà Vinh</option><option value="Sóc Trăng" >Sóc Trăng</option><option value="Bạc Liêu" >Bạc Liêu</option><option value="Cà Mau" >Cà Mau</option><option value="Điện Biên" >Điện Biên</option><option value="Đăk Nông" >Đăk Nông</option><option value="Hậu Giang" >Hậu Giang</option><option value="Khác" >Khác</option>                                                </select>
+												
+                                       
+                                                <label class="left"> </label>
+                                                <input type="text" class="form-control" id="noisinhkhac"
+                                                       name="noisinhkhac" placeholder="Nhập nơi sinh"
+                                                       VALUE=""/>
+                                         
+                                           
+                                                
+                                           
+                                                <label class="left"> </label>
+                                                <input type="text" class="form-control" id="quequan"
+                                                       name="quequan" placeholder="Quê quán" VALUE=""/>
+                                                <input type="text" class="form-control" id="sdt" 
+                                                       name="sdt" placeholder="Số điện thoại sinh
+                                                    viên" VALUE=""/>
+                                                <input type="text" class="form-control" id="email" 
+                                                       name="email" placeholder="Email" VALUE=""/>
+                                           
+
+                                       
+                                            <h1 class="hk">Hộ khẩu thường trú:</h1>
+                                                    <input type="text" class="form-control"
+                                                           id="hktinh" name="hktinh" placeholder="Tỉnh/thành phố"
+                                                           VALUE=""/>
+                                                    <input type="text" class="form-control" 
+                                                           id="hkxaphuong" name="hkxaphuong" placeholder="Xã/phường"
+                                                           VALUE=""/>
+                                                    <input type="text" class="form-control" id="sdtbaotin"
+                                                           name="sdtbaotin"  placeholder="Số điện thoại gia đình"
+                                                           VALUE=""/>
+                                                    <input type="text" class="form-control" id="cmnd_giamho"
+                                                           name="cmnd_giamho" placeholder="CMND/Thẻ căn cước của người giám hộ"
+                                                           VALUE=""/>
+                                                    <input type="text" class="form-control" 
+                                                           id="mabhyt" name="mabhyt" placeholder="Mã số BHYT"
+                                                           VALUE=""/>
+                                                    <input type="text" class="form-control" 
+                                                           id="mabhxh" name="mabhxh" placeholder="Mã số BHXH"
+                                                           VALUE=""/>
+						<input type="checkbox" name="confirm" value="confirm"/>					
+						<label for="camket">Tôi cam đoan tất cả những điều trên là sự thật và xin chịu trách nhiệm cho tất cả thông tin ở trên </label>
+                                                <div class="checkbox">
+											
+                                  	
+                        <div class="alert">
+                                  <p> <strong>Lưu ý :</strong> - Sinh viên chú ý điền đầy đủ tất cả các thông tin <br>
+                                      Sau khi điền đầy đủ
+                                      thông tin <br> click vào nút <strong>"Cập nhật"</strong> ở cuối trang để lưu dữ liệu. </p>
+                                </div>   
+						<br>
+                                    <input id="submit" type="submit" name="submit" class="submit"
+                                           value="Cập nhật" onClick="tracuu"/>
+					<script language="javascript">
+        var button = document.getElementById('submit');
+        button.addEventListener('click', function(){
+            alert("Error: Thông tin bạn được cập nhật thành công :))))");
+        });
+        </script>
+						</div>
+					</form>
+						</div>
+</section>
+ <!--this is the footer-->    
+<footer class="footer-container">
+       <div class="footer-left-section">
+        <img class="logo-footer" src="Images/Logo-Dai-Hoc-Giao-Thong-Van-Tai-UTC.webp" alt="">
+       </div>
+       
+       
+        <div class="footer-middle-section">
+        <ul class="Directions">
+           <li>Xem video hướng dẫn tra cứu điểm <a style="text-decoration:none" href="">tại đây</a></li> 
+           <li>Hỏi đáp và thắc mắc <a href="">tại đây</a> </li>
+           <li>Contact us:123-4567-890</li>
+           <li>Địa chỉ: phố Cầu Giấy, P.Láng Thượng, Q.Đống Đa, Hà Nội.
+            Điện thoại: (84.24) 37663311 - Fax: (84.24)37669613</li>
+        </ul>
+    </div>                
+    <div class="footer-last-section">
+        <p style="font-size: 20px; margin-left: 20px;">Site Map</p>
+        <ul class="Directions">
+            <li><a class="linked" href="https://tungpho6.github.io/Home-page/Home.html">Trang chủ</a></li>
+            <li><a class="linked"  href="">Tra cứu điểm</a>  </li>
+            <li><a class="linked" href="">Đăng nhập</a> </li>
+            <li><a class="linked" href="">About us</a> </li>
+        </ul>
+        
+    </div>         
+    </footer>
+</body>
+</html>
